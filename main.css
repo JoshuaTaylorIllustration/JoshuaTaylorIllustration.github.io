@@ -77,30 +77,34 @@ header {
 
 section {
 align-self: center;
+text-overflow: ellipsis;
   
 }
 
 .libraryThumbnail {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-
+  height: 20em;
+  object-fit: cover; /*These properties scale the image to fit the space*/
+  margin-bottom: -2em;
 }
 
 ul{
   flex: 100;
   flex-flow: wrap;
-  background-color: coral;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
-  margin-bottom: 4em;
+  margin-bottom: 09em;
 
 }
 
 li {
-  flex-grow: inherit;
+  background-color: rgb(146, 134, 134, 0.5);
   min-width: 360px;
   max-width: 300px;
+  margin: .5em;
+
+  
   
 }
 
@@ -132,7 +136,7 @@ h1 {
 .profilePic {
   height: 40px;
   border-radius:50%;
-  
+ 
 }
 
 
