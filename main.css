@@ -1,24 +1,143 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap');
-@import "@material/chips/mdc-chips";
+
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;S
+  box-sizing: border-box;
+  
+
+  
   
   
   
 }
 
-.head {
+body {
+  background: white;
+  /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Roboto', sans-serif;
+ 
+}
+
+p, blockquote {
+  font-size: .9em;
+  line-height: 1em;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.container{
+  padding: 2%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
+}
+
+
+.logoHome{
+  width: 48px;
 
 }
 
-.h1 {
-  font-family: 'Roboto', sans-serif;
+.hide-mobile {
+  display: none;
 }
 
-h5 {
-  font-family: 'Roboto', sans-serif;
+header {
+  display: flex;
+  justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
+
+}
+
+.menu {
+  width: 32px;
+  margin-top: 45%;
+}
+
+.containerLibrary{
+ display: flex;
+ flex-wrap: nowrap;
+ 
+
+ 
+
+  
+}
+
+.flexItemSpacer {
+  flex: 1;
+  color: black;
+}
+.server {
+  width: 70%;
+}
+
+section {
+align-self: center;
+  
+}
+
+.libraryThumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+ul{
+  flex: 100;
+  flex-flow: wrap;
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4em;
+
+}
+
+li {
+  flex-grow: inherit;
+  min-width: 360px;
+  max-width: 300px;
+  
+}
+
+/* h1, .subhead {}you can do two at once */
+
+h1 {
+
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.subhead {
+  font-size: 1em;
+  font-style: italic;
+
+
+  
+
+}
+
+.mdc-chip-set {
+  border-radius: 50%;
+  font-size: 1em;
+  color: black;
+  height: 32;
+  
+}
+
+.profilePic {
+  height: 40px;
+  border-radius:50%;
+  
+}
+
+
+
+
+.profilePic {
+  flex: 1;
 }
