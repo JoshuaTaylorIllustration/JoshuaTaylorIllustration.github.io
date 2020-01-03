@@ -14,7 +14,7 @@
 }
 
 body {
-  background: white;
+  background: rgb(255, 255, 255);
   /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Roboto', sans-serif;
  
@@ -30,26 +30,39 @@ ul{
   padding: 0;
   margin: 0;
   display: flex;
+  
 }
 
 .container{
+ 
   padding: 2%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
 }
 
 
 .logoHome{
   width: 48px;
-
+ 
 }
 
 .hide-mobile {
   display: none;
 }
 
+.navBar_div {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+  
+}
+
 header {
   display: flex;
   justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
-
+  background-color: white;
+  
 }
 
 .menu {
@@ -57,14 +70,14 @@ header {
   margin-top: 45%;
 }
 
-.containerLibrary{
- display: flex;
- flex-wrap: nowrap;
- 
-
- 
-
+.containerLibrary {
+  display: flex;
+  flex-wrap: nowrap;
   
+}
+
+.offsetBox_div {
+  height: 4.125em;
 }
 
 .flexItemSpacer {
@@ -75,9 +88,13 @@ header {
   width: 70%;
 }
 
-section {
-align-self: center;
-text-overflow: ellipsis;
+.libraryTitle {
+  
+  padding-bottom: 2.5em;
+  text-overflow: ellipsis;
+  order: -1;
+  min-width: 100%;
+  flex: 1;
   
 }
 
@@ -86,6 +103,7 @@ text-overflow: ellipsis;
   height: 20em;
   object-fit: cover; /*These properties scale the image to fit the space*/
   margin-bottom: -2em;
+  
 }
 
 ul{
@@ -94,12 +112,12 @@ ul{
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
-  margin-bottom: 09em;
+  
 
 }
 
 li {
-  background-color: rgb(146, 134, 134, 0.5);
+  background-color: white;
   min-width: 360px;
   max-width: 300px;
   margin: .5em;
@@ -112,18 +130,35 @@ li {
 
 h1 {
 
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 300;
 }
 
 .subhead {
   font-size: 1em;
   font-style: italic;
-
-
-  
+  line-height: 1.5em;
 
 }
+
+.btnLoadMore{
+  
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 1.25em;
+  padding: 1.25em;
+  background-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  Width: 200px;
+  text-align: center;
+  margin: auto;
+  margin-top: 1em;
+}
+
+
+}
+
+
 
 .mdc-chip-set {
   border-radius: 50%;
