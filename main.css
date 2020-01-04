@@ -34,13 +34,14 @@ ul{
 }
 
 .container{
- 
-  padding: 2%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
+  padding-top: -3;
+  padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
 }
 
 
 .logoHome{
-  width: 48px;
+  width: 3em;
+  margin: .25em;
  
 }
 
@@ -67,7 +68,7 @@ header {
 
 .menu {
   width: 32px;
-  margin-top: 45%;
+  margin-top: 20%;
 }
 
 .containerLibrary {
@@ -118,9 +119,10 @@ ul{
 
 li {
   background-color: white;
-  min-width: 360px;
+  min-width: 340px;
   max-width: 300px;
-  margin: .5em;
+  margin: .75em;
+  
 
   
   
@@ -134,7 +136,19 @@ h1 {
   font-weight: 300;
 }
 
+h3 {
+
+  font-weight: 500;
+
+}
+
+h6 {
+  
+  color: rgb(192, 192, 192);
+}
+
 .subhead {
+  margin-top: .5em;
   font-size: 1em;
   font-style: italic;
   line-height: 1.5em;
@@ -155,28 +169,71 @@ h1 {
   margin-top: 1em;
 }
 
+figure {
+  margin-top: 3em;
+}
+
+.ellipsisContainer {
+  background-color: white;
+}
+
+figcaption {
+  margin-top: .75em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  /*This is how you do the Ellipsis based on the shape of its container*/
+  
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
+  background-color: white;
+
+  
+}
+
+.itemTitle {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-width: 90%;
+}
+
+.tag_ul {
+  margin-bottom: 3em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  display: flex;
+  background-color: white;
+  
+  
+  
 
 }
 
-
-
 .mdc-chip-set {
-  border-radius: 50%;
+  
+  border-radius: 2em;
   font-size: 1em;
   color: black;
-  height: 32;
+  background-color: rgb(224, 224, 224);
+  padding: .75em;
+  margin-left: .5em;
+  
   
 }
 
 .profilePic {
+  
   height: 40px;
+  width: 40px;
   border-radius:50%;
  
 }
 
-
-
-
-.profilePic {
-  flex: 1;
-}
