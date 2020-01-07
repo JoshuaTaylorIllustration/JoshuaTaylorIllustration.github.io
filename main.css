@@ -31,8 +31,17 @@ ul{
   margin: 0;
   display: flex;
   
+  
+  
 }
 
+@media only screen and (min-width: 777px) {
+  .libraryTitle {
+    margin-bottom: 2em;
+    white-space: nowrap; /*this keeps the text from wrapping inside this element*/
+    z-index: 4; /*this keeps the List items from overlapping the text. there are empty list elements. I'll need an @media for phone size*/
+  }
+}
 .container{
   padding-top: -3;
   padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
@@ -50,6 +59,7 @@ ul{
 }
 
 .navBar_div {
+  z-index: 6;
   overflow: hidden;
   background-color: white;
   position: fixed;
@@ -84,17 +94,17 @@ header {
 .flexItemSpacer {
   flex: 1;
   color: black;
+  
 }
 .server {
   width: 70%;
 }
 
 .libraryTitle {
-  
-  padding-bottom: 2.5em;
-  text-overflow: ellipsis;
+
+  /*padding-bottom: 2.5em; ---I had moved this to align with other flex items---*/
   order: -1;
-  min-width: 100%;
+  /*min-width: 100%; /*This value keeps the "Library Title" stretched across the whole row*/
   flex: 1;
   
 }
@@ -122,6 +132,8 @@ li {
   min-width: 340px;
   max-width: 300px;
   margin: .75em;
+  margin-bottom: 0;
+  /*background-color: teal; use this to see how the list items are working*/
   
 
   
@@ -180,7 +192,7 @@ figure {
   background-color: white;
 }
 
-figcaption {
+.item_figcaption{
   margin-top: .75em;
   overflow: hidden;
   display: -webkit-box;
@@ -203,11 +215,11 @@ figcaption {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  max-width: 90%;
+  max-width: 89%;
 }
 
 .tag_ul {
-  margin-bottom: 3em;
+  margin-bottom: 4em;
   margin-top: 1em;
   flex-wrap: wrap;
   flex-direction: row;
@@ -240,25 +252,32 @@ figcaption {
  
 }
 
+.spacer_li{
+  height: 1.75em;
+ /* This gives some padding before the flex elements take over */
+}
+
 .footer-container {
-  display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  
+  
   background: rgb(255, 255, 255);
-  padding: 3em ; /*padding of 3em top and bottom and 0 right and left*/
+  
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.119);
 
 }
 
 .links_div {
-  flex: 2;
+  flex: 1;
   padding-bottom: 3em;
+  max-width: 704px;
 }
 
 .paragraph_div {
-  flex: 0;
+  flex: 1;
   min-width: 16em;
+  max-width: 352px;
 }
 
 .paragraph_div p{
@@ -273,8 +292,8 @@ line-height: 1.5em;
 
 
 ul.footer-links {
-  margin: 0 auto;
-  color: ;
+  
+  color: black;
 
 
 }
@@ -289,3 +308,6 @@ ul.footer-links li a {
   color: rgb(0, 0, 0);
 }
 
+.address {
+  padding-top: 1em;
+}
