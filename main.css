@@ -167,6 +167,9 @@ h6 {
   text-align: center;
   margin: auto;
   margin-top: 1em;
+  margin-bottom: 4em;
+  z-index: 4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.119);
 }
 
 figure {
@@ -235,5 +238,54 @@ figcaption {
   width: 40px;
   border-radius:50%;
  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 3em ; /*padding of 3em top and bottom and 0 right and left*/
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.119);
+
+}
+
+.links_div {
+  flex: 2;
+  padding-bottom: 3em;
+}
+
+.paragraph_div {
+  flex: 0;
+  min-width: 16em;
+}
+
+.paragraph_div p{
+font-size: 1em;
+line-height: 1.5em;
+}
+
+.logo_footer_div {
+  padding-bottom:1em;
+  
+}
+
+
+ul.footer-links {
+  margin: 0 auto;
+  color: ;
+
+
+}
+
+ul.footer-links li {
+  display: inline-block; /* This is the way to display things left and right of each other, outside of flex as well*/
+  color: rgb(0, 0, 0);
+}
+
+ul.footer-links li a {
+  display: inline-block; /* This is the way to display things left and right of each other, outside of flex as well*/
+  color: rgb(0, 0, 0);
 }
 
