@@ -25,23 +25,41 @@ p, blockquote {
   line-height: 1em;
 }
 
-ul{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  
-  
-  
-}
 
-@media only screen and (min-width: 777px) {
+
+@media only screen and (min-width: 766px) {
   .libraryTitle {
     margin-bottom: 2em;
     white-space: nowrap; /*this keeps the text from wrapping inside this element*/
     z-index: 4; /*this keeps the List items from overlapping the text. there are empty list elements. I'll need an @media for phone size*/
+    min-width: 340px;
+    max-width: 300px;
+    margin: .75em;
+    /*padding-bottom: 2.5em; ---I had moved this to align with other flex items---*/
+    order: -1;
+    
   }
+
+  .show-desktop {
+    display: block;
+    
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+ /*I can't figure out how to show the menu like DesignCourse does my things are named differently. Not sure how to get the menu to show up. If I could then I would restyle it.*/
+
+
 }
+
+
+
+
+
+
+
 .container{
   padding-top: -3;
   padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
@@ -69,6 +87,95 @@ ul{
   
 }
 
+.library_UL {
+  flex: 1;
+  flex-flow: wrap;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+
+}
+
+.library_UL_Title {
+
+  flex-flow: wrap;
+  background-color: rgb(255, 255, 255); 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+
+}
+
+.librarylistA {
+  background-color: rgb(255, 255, 255);
+  min-width: 340px;
+  max-width: 300px;
+  margin: .75em;
+  margin-bottom: 0;
+  /*background-color: teal; use this to see how the list items are working*/
+  
+}
+
+
+
+
+.openMenu_div { /*Open side menu be sure you remove the dot "." from "nav ul" */
+  position: fixed;
+  z-index: 7;
+  width: 80%;
+  height: 100%;
+  text-align: left;
+  top: 0;
+  right: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+  padding-top: 1.25em;
+  list-style-type: none;
+  
+
+}
+
+.menuItemList{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+  
+}
+
+.menuItem {
+  width: 100%;
+  background-color: white;
+  flex: 1;
+  padding: 2.5em;
+  display: flex;
+  align-items: stretch;
+  text-decoration: none;
+  font-size: 1.25em;
+  color: black;
+  
+}
+
+
+.menuItem:hover { /*Menu Links on hover*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.119);
+  z-index: 10;
+  font-weight: 700;
+
+}
+
+.exit-btn {
+  
+}
+
+
+
 header {
   display: flex;
   justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
@@ -87,6 +194,18 @@ header {
   
 }
 
+.library_UL {
+  flex: 100;
+  flex-flow: wrap;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
 .offsetBox_div {
   height: 4.125em;
 }
@@ -101,12 +220,17 @@ header {
 }
 
 .libraryTitle {
-
+  
+  background-color: white;
+  min-width: 340px;
+  max-width: 300px;
+  margin: .75em;
+  margin-bottom: 2em;
+  margin-top: 2em;
   /*padding-bottom: 2.5em; ---I had moved this to align with other flex items---*/
   order: -1;
   /*min-width: 100%; /*This value keeps the "Library Title" stretched across the whole row*/
-  flex: 1;
-  
+
 }
 
 .libraryThumbnail {
@@ -115,30 +239,11 @@ header {
   object-fit: cover; /*These properties scale the image to fit the space*/
   margin-bottom: -2em;
   
-}
-
-ul{
-  flex: 100;
-  flex-flow: wrap;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  
-
-}
-
-li {
-  background-color: white;
-  min-width: 340px;
-  max-width: 300px;
-  margin: .75em;
-  margin-bottom: 0;
-  /*background-color: teal; use this to see how the list items are working*/
-  
-
   
   
 }
+
+
 
 /* h1, .subhead {}you can do two at once */
 
