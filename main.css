@@ -25,7 +25,11 @@ p, blockquote {
   line-height: 1em;
 }
 
-
+@media only screen and (min-width: 0px) {
+  .hide-mobile {
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 766px) {
   .libraryTitle {
@@ -39,19 +43,93 @@ p, blockquote {
     order: -1;
     
   }
+  
+ 
 
+  .navBar_div .container {
+    display: flex;
+    align-items: flex-start;
+    
+  }
+
+  .navBar_div .container .header {
+    padding: 0;
+    display: flex;
+    
+    
+  }
+
+  .container .openMenu_div {
+    flex: 1;
+    position: inherit;
+    background: none;
+    box-shadow: unset;
+    padding: 0;
+    
+    
+    
+  }
+
+  .container .openMenu_div .menuItemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    
+    
+    
+  
+    
+   
+  }
+
+  .container .openMenu_div .menuItemList .menuItem {
+    background-color: white;
+    flex: 0;
+    text-decoration: none;
+    font-size: 1.25em;
+    color: black;
+    padding: .625em 1.25em;
+    height: auto;
+    width: auto;
+    
+    
+  }
+  
+  
+  .container .openMenu_div .menuItemList .menuItem:hover { /*Menu Links on hover*/
+    box-shadow: unset;
+    z-index: 10;
+    font-weight: 300;
+    height: initial;
+    width: initial;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+  
+  }
+    
+  .container .openMenu_div .menuItemList .exit-btn {
+    display: none;
+  }
+
+ /*I can't figure out how to show the menu like DesignCourse does my things are named differently. Not sure how to get the menu to show up. If I could then I would restyle it.*/
+  /*This is my only mobile responsive page, in the video he has larger sizes and puts hide mobile show desktop there*/
+
+  .menuItemList .exit-btn {
+    display: none;
+  }
+  
   .show-desktop {
     display: block;
-    
   }
 
   .hide-desktop {
     display: none;
   }
-
- /*I can't figure out how to show the menu like DesignCourse does my things are named differently. Not sure how to get the menu to show up. If I could then I would restyle it.*/
-
-
+  
+ 
+  
 }
 
 
@@ -72,9 +150,6 @@ p, blockquote {
  
 }
 
-.hide-mobile {
-  display: none;
-}
 
 .navBar_div {
   z-index: 6;
@@ -170,9 +245,6 @@ p, blockquote {
 
 }
 
-.exit-btn {
-  
-}
 
 
 
