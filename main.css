@@ -159,7 +159,7 @@ p, blockquote {
 
 
 .navBar_div {
-  
+  position: fixed;
   overflow: hidden;
   background-color: white;
   top: 0;
