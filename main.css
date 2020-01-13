@@ -76,6 +76,8 @@ p, blockquote {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    z-index: 12;
+    position: relative;
     
     
     
