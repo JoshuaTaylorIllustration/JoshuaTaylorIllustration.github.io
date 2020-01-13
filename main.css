@@ -61,7 +61,7 @@ p, blockquote {
 
   .container .openMenu_div {
     flex: 1;
-    position: inherit;
+    position: relative;
     background: none;
     box-shadow: unset;
     padding: 0;
