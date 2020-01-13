@@ -173,10 +173,9 @@ p, blockquote {
   flex-flow: wrap;
   background-color: rgb(255, 255, 255);
   display: flex;
-  
   padding: 0;
   margin: 0;
-  display: flex;
+  
   
 
 }
@@ -208,7 +207,6 @@ p, blockquote {
 
 .openMenu_div { /*Open side menu be sure you remove the dot "." from "nav ul" */
   position: fixed;
-  z-index: 7;
   width: 80%;
   height: 100%;
   text-align: left;
