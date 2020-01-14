@@ -41,7 +41,7 @@ p, blockquote {
     margin: .75em;
     /*padding-bottom: 2.5em; ---I had moved this to align with other flex items---*/
     order: -1;
-    
+    /*This is for desktop, everything above 766px because everthing below the min width is designated elswere*/
   }
   
  
@@ -138,7 +138,10 @@ p, blockquote {
   padding-top: -3;
   padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
   background-color: rgb(128, 0, 107);
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
   
 }
 
@@ -165,10 +168,9 @@ p, blockquote {
   position: fixed;
   overflow: hidden;
   background-color: white;
-  top: 0;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
-  
+  z-index: 1;
 }
 
 .library_UL {
@@ -211,7 +213,7 @@ p, blockquote {
 
 
 .openMenu_div { /*Open side menu be sure you remove the dot "." from "nav ul" */
-  position: fixed;
+  position: absolute;
   z-index: 9;
   width: 80%;
   text-align: left;
@@ -221,6 +223,7 @@ p, blockquote {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
   padding-top: 1.25em;
   list-style-type: none;
+  
   
   
 
