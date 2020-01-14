@@ -149,6 +149,8 @@ p, blockquote {
   padding-top: -3;
   padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
   background-color: teal;
+  position: relative;
+  z-index: -5;
 }
 
 
