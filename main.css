@@ -46,22 +46,15 @@ p, blockquote {
   
  
 
-  .navBar_div .container {
+  .navBar_div .navBar_div2 {
     display: flex;
     align-items: flex-start;
     
   }
 
-  .navBar_div .container .header {
-    padding: 0;
-    display: flex;
-    z-index: 10;
-    position: fixed;
-    
-    
-  }
+  
 
-  .container .openMenu_div {
+  .navBar_div2 .openMenu_div {
     flex: 1;
     position: relative;
     background: none;
@@ -73,7 +66,7 @@ p, blockquote {
     
   }
 
-  .container .openMenu_div .menuItemList {
+  .navBar_div2 .openMenu_div .menuItemList {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -88,7 +81,7 @@ p, blockquote {
    
   }
 
-  .container .openMenu_div .menuItemList .menuItem {
+  .navBar_div2 .openMenu_div .menuItemList .menuItem {
     background-color: white;
     flex: 0;
     text-decoration: none;
@@ -104,7 +97,7 @@ p, blockquote {
   }
   
   
-  .container .openMenu_div .menuItemList .menuItem:hover { /*Menu Links on hover*/
+  .navBar_div2 .openMenu_div .menuItemList .menuItem:hover { /*Menu Links on hover*/
     box-shadow: unset;
     z-index: 14;
     font-weight: 300;
@@ -116,7 +109,7 @@ p, blockquote {
   
   }
     
-  .container .openMenu_div .menuItemList .exit-btn {
+  .navBar_div2 .openMenu_div .menuItemList .exit-btn {
     display: none;
   }
 
@@ -141,6 +134,13 @@ p, blockquote {
 
 
 
+.navBar_div2{
+  padding-top: -3;
+  padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
+  background-color: rgb(128, 0, 107);
+  position: relative;
+  
+}
 
 
 
@@ -148,6 +148,7 @@ p, blockquote {
 .container{
   padding-top: -3;
   padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
+  background-color: teal;
 }
 
 
@@ -209,11 +210,12 @@ p, blockquote {
 
 .openMenu_div { /*Open side menu be sure you remove the dot "." from "nav ul" */
   position: fixed;
+  z-index: 9;
   width: 80%;
   text-align: left;
   top: 0;
   right: 0;
-  background: rgb(76, 194, 241);
+  background: rgb(205, 241, 76);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
   padding-top: 1.25em;
   list-style-type: none;
