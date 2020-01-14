@@ -55,8 +55,7 @@ p, blockquote {
   .navBar_div .container .header {
     padding: 0;
     display: flex;
-    z-index: 10;
-    position: fixed;
+    
     
     
   }
@@ -118,6 +117,7 @@ p, blockquote {
     
   .container .openMenu_div .menuItemList .exit-btn {
     display: none;
+    
   }
 
  /*I can't figure out how to show the menu like DesignCourse does my things are named differently. Not sure how to get the menu to show up. If I could then I would restyle it.*/
@@ -168,45 +168,27 @@ p, blockquote {
   
 }
 
-.library_UL {
-  flex: 1;
-  flex-flow: wrap;
-  background-color: rgb(255, 255, 255);
+.headerNav {
   display: flex;
-  padding: 0;
-  margin: 0;
+  justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
+  background-color: white;
+  position: relative;
   
   
-
+  
 }
 
-.library_UL_Title {
-
-  flex-flow: wrap;
-  background-color: rgb(255, 255, 255); 
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+header {
   display: flex;
+  justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
+  background-color: white;
   
-
-}
-
-.librarylistA {
-  background-color: rgb(255, 255, 255);
-  min-width: 340px;
-  max-width: 300px;
-  margin: .75em;
-  margin-bottom: 0;
-  /*background-color: teal; use this to see how the list items are working*/
   
 }
-
-
-
 
 .openMenu_div { /*Open side menu be sure you remove the dot "." from "nav ul" */
   position: fixed;
+  z-index: 10;
   width: 80%;
   height: 100%;
   text-align: left;
@@ -250,14 +232,48 @@ p, blockquote {
 }
 
 
-
-
-header {
+.library_UL {
+  flex: 1;
+  flex-flow: wrap;
+  background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
-  background-color: white;
+  padding: 0;
+  margin: 0;
+  
+  
+
+}
+
+.library_UL_Title {
+
+  flex-flow: wrap;
+  background-color: rgb(255, 255, 255); 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+
+}
+
+
+
+.librarylistA {
+  background-color: rgb(255, 255, 255);
+  min-width: 340px;
+  max-width: 300px;
+  margin: .75em;
+  margin-bottom: 0;
+  /*background-color: teal; use this to see how the list items are working*/
   
 }
+
+
+
+
+
+
+
 
 .menu {
   width: 32px;
@@ -368,6 +384,8 @@ h6 {
 figure {
   margin-top: 3em;
 }
+
+
 
 .ellipsisContainer {
   background-color: white;
