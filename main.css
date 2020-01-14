@@ -226,7 +226,8 @@ p, blockquote {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  
+  position: relative;
+  z-index: 9;
   
   
 }
@@ -241,6 +242,8 @@ p, blockquote {
   text-decoration: none;
   font-size: 1.25em;
   color: black;
+  position: relative;
+  z-index: 10;
   
   
 }
@@ -248,8 +251,9 @@ p, blockquote {
 
 .menuItem:hover { /*Menu Links on hover*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.119);
-  z-index: 10;
+  z-index: 11;
   font-weight: 700;
+  position: relative;
 
 }
 
