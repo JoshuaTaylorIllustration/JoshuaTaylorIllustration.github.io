@@ -218,6 +218,7 @@ p, blockquote {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
   padding-top: 1.25em;
   list-style-type: none;
+  max-height: 1000px;
   
 
 }
@@ -226,8 +227,8 @@ p, blockquote {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  max-height: 320px;
-  position: block;
+  
+  
   
 }
 
