@@ -55,7 +55,8 @@ p, blockquote {
   .navBar_div .container .header {
     padding: 0;
     display: flex;
-    
+    z-index: 10;
+    position: fixed;
     
     
   }
@@ -117,7 +118,6 @@ p, blockquote {
     
   .container .openMenu_div .menuItemList .exit-btn {
     display: none;
-    
   }
 
  /*I can't figure out how to show the menu like DesignCourse does my things are named differently. Not sure how to get the menu to show up. If I could then I would restyle it.*/
@@ -168,70 +168,6 @@ p, blockquote {
   
 }
 
-.headerNav {
-  display: flex;
-  justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
-  background-color: white;
-  position: relative;
-  
-  
-  
-}
-
-header {
-  display: flex;
-  justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
-  background-color: white;
-  
-  
-}
-
-.openMenu_div { /*Open side menu be sure you remove the dot "." from "nav ul" */
-  position: fixed;
-  z-index: 10;
-  width: 80%;
-  height: 100%;
-  text-align: left;
-  top: 0;
-  right: 0;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
-  padding-top: 1.25em;
-  list-style-type: none;
-  
-
-}
-
-.menuItemList{
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  
-  
-}
-
-.menuItem {
-  width: 100%;
-  background-color: white;
-  flex: 1;
-  padding: 2.5em;
-  display: flex;
-  align-items: stretch;
-  text-decoration: none;
-  font-size: 1.25em;
-  color: black;
-  
-}
-
-
-.menuItem:hover { /*Menu Links on hover*/
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.119);
-  z-index: 10;
-  font-weight: 700;
-
-}
-
-
 .library_UL {
   flex: 1;
   flex-flow: wrap;
@@ -271,9 +207,60 @@ header {
 
 
 
+.openMenu_div { /*Open side menu be sure you remove the dot "." from "nav ul" */
+  position: fixed;
+  width: 80%;
+  height: 100%;
+  text-align: left;
+  top: 0;
+  right: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+  padding-top: 1.25em;
+  list-style-type: none;
+  
+
+}
+
+.menuItemList{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-height: 50%;
+  
+}
+
+.menuItem {
+  width: 100%;
+  background-color: white;
+  flex: 1;
+  padding: 2.5em;
+  display: flex;
+  align-items: stretch;
+  text-decoration: none;
+  font-size: 1.25em;
+  color: black;
+  
+  
+}
+
+
+.menuItem:hover { /*Menu Links on hover*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.119);
+  z-index: 10;
+  font-weight: 700;
+
+}
 
 
 
+
+header {
+  display: flex;
+  justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
+  background-color: white;
+  
+}
 
 .menu {
   width: 32px;
