@@ -226,7 +226,7 @@ p, blockquote {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  max-height: 50%;
+  max-height: 320px;
   position: block;
   
 }
