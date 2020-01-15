@@ -49,7 +49,7 @@ p, blockquote {
   .navBar_div .navBar_div2 {
     display: flex;
     align-items: flex-start;
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
   }
 
   
@@ -61,6 +61,7 @@ p, blockquote {
     box-shadow: unset;
     padding: 0;
     z-index: 11;
+    
     
     
     
@@ -128,21 +129,21 @@ p, blockquote {
     display: none;
   }
   
- 
   
 }
 
 
 
-.navBar_div2{
+.navBar_div2 {
   padding-top: -3;
   padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
-  background-color: rgb(128, 0, 107);
+  background-color: white;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   z-index: 8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
   
 }
 
@@ -152,7 +153,7 @@ p, blockquote {
 .container{
   padding-top: -3;
   padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
-  background-color: rgb(128, 0, 0);
+  background-color: white;
   position: relative;
   z-index: -5;
 }
@@ -167,10 +168,11 @@ p, blockquote {
 
 .navBar_div {
   position: fixed;
-  background-color: white;
+  
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+  
   z-index: 1;
+  
 }
 
 .library_UL {
@@ -211,6 +213,18 @@ p, blockquote {
 
 
 
+.viewBtn {
+  
+  position: absolute;
+  padding: .5em 1em .5em 1em;
+  margin: -1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: inline;
+  border-radius: 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+}
+
 
 .openMenu_div { /*Open side menu be sure you remove the dot "." from "nav ul" */
   position: absolute;
@@ -219,10 +233,11 @@ p, blockquote {
   text-align: left;
   top: 0;
   right: 0;
-  background: rgb(205, 241, 76);
+  background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
   padding-top: 1.25em;
   list-style-type: none;
+  
   
   
   
@@ -235,6 +250,7 @@ p, blockquote {
   flex-direction: column;
   position: relative;
   z-index: 9;
+  
   
   
 }
@@ -274,6 +290,11 @@ header {
   
 }
 
+.menuContainer {
+  padding: .5em;
+  flex: 0;
+}
+
 .menu {
   width: 32px;
   margin-top: 20%;
@@ -288,7 +309,7 @@ header {
 .library_UL {
   flex: 100;
   flex-flow: wrap;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -455,21 +476,14 @@ figure {
  /* This gives some padding before the flex elements take over */
 }
 
-.footer-container {
-  justify-content: center;
-  flex-wrap: wrap;
-  
-  
-  background: rgb(255, 255, 255);
-  
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.119);
 
-}
 
 .links_div {
   flex: 1;
   padding-bottom: 3em;
-  max-width: 704px;
+  width: 340px;
+  margin: .75em;
+  background-color: rgb(255, 255, 255);
 }
 
 .paragraph_div {
@@ -489,23 +503,37 @@ line-height: 1.5em;
 }
 
 
-ul.footer-links {
+
+
+.linkslistA {
+  display: block; /* This is the way to display things left and right of each other, outside of flex as well*/
+  color: rgb(0, 0, 0);
+  padding: 0 0 2em 0;
   
-  color: black;
-
-
 }
 
-ul.footer-links li {
+.links_div .footer-links .linkslistA a {
   display: inline-block; /* This is the way to display things left and right of each other, outside of flex as well*/
   color: rgb(0, 0, 0);
-}
-
-ul.footer-links li a {
-  display: inline-block; /* This is the way to display things left and right of each other, outside of flex as well*/
-  color: rgb(0, 0, 0);
+  text-decoration: none;
+  
 }
 
 .address {
   padding-top: 1em;
+  
 }
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  
+  
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
