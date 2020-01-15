@@ -17,7 +17,7 @@ body {
   background: rgb(255, 255, 255);
   /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Roboto', sans-serif;
- 
+  
 }
 
 p, blockquote {
@@ -155,7 +155,7 @@ p, blockquote {
   padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
   background-color: white;
   position: relative;
-  z-index: -5;
+  z-index: 1;
 }
 
 
@@ -171,7 +171,7 @@ p, blockquote {
   
   width: 100%;
   
-  z-index: 1;
+  z-index: 2;
   
 }
 
@@ -527,6 +527,7 @@ line-height: 1.5em;
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
+  
   
   
 }
