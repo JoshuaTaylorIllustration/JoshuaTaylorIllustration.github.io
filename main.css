@@ -156,15 +156,21 @@ p, blockquote {
   background-color: white;
   position: relative;
   z-index: 1;
+  
 }
 
 
-.logoHome{
+.logoHome {
   width: 3em;
   margin: .25em;
  
 }
-
+.backUpTrail {
+  width: 2.6em;
+  margin: 0em;
+ 
+ 
+}
 
 .navBar_div {
   position: fixed;
