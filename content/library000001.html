@@ -33,7 +33,7 @@
             <div class="openMenu_div show-desktop hide-mobile" id="nav"  > 
                 <div class="menuItemList">
                     <div class="flexItemSpacer"></div>
-                    <a class="menuItem exit-btn" href="#" id="exit" ><img src="images/iconsGoogle/close-24px.svg" alt="exit menu"></a>
+                    <a class="menuItem exit-btn" href="#" id="exit" ><img src="../images/iconsGoogle/close-24px.svg" alt="exit menu"></a>
                     <a class="menuItem" href="../index.html">Library</a>
                     <a class="menuItem" href="https://joshuataylorillust.wixsite.com/mysite">Design</a>
                     <a class="menuItem" href="#">Blog</a>
@@ -42,5 +42,25 @@
         
         </div>
     </div>
+    <script>
+    
+        var menu = document.getElementById ('menu');
+        var nav = document.getElementById ('nav');
+        var exit = document.getElementById ('exit');
+
+        menu.addEventListener ('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+
+        });
+
+        exit.addEventListener ('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        
+
+    </script>
 </body>
 </html>
