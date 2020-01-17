@@ -168,8 +168,14 @@ p, blockquote {
 .backUpTrail {
   width: 2.6em;
   margin: 0em;
- 
- 
+}
+
+.backUpTrail:hover {
+  width: 2.6em;
+  margin: 0em;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
 }
 
 .navBar_div {
