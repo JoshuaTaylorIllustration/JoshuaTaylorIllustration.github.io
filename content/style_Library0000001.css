@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+  
+  
+  
+  
+}
+
+body {
+  background: rgb(255, 255, 255);
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+p, blockquote {
+  font-size: .9em;
+  line-height: 1em;
+}
+
+@media only screen and (min-width: 0px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 766px) {
+  .libraryTitle {
+    margin-bottom: 2em;
+    white-space: nowrap; /*this keeps the text from wrapping inside this element*/
+    z-index: 4; /*this keeps the List items from overlapping the text. there are empty list elements. I'll need an @media for phone size*/
+    min-width: 340px;
+    max-width: 300px;
+    margin: .75em;
+    /*padding-bottom: 2.5em; ---I had moved this to align with other flex items---*/
+    order: -1;
+    /*This is for desktop, everything above 766px because everthing below the min width is designated elswere*/
+  }
+  
+ 
+
+  .navBar_div .navBar_div2 {
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+  }
+
+  
+
+  .navBar_div2 .openMenu_div {
+    flex: 1;
+    position: relative;
+    background: none;
+    box-shadow: unset;
+    padding: 0;
+    z-index: 11;
+    
+    
+    
+    
+  }
+
+  .navBar_div2 .openMenu_div .menuItemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 12;
+    position: relative;
+    
+    
+    
+    
+  
+    
+   
+  }
+
+  .navBar_div2 .openMenu_div .menuItemList .menuItem {
+    background-color: white;
+    flex: 0;
+    text-decoration: none;
+    font-size: 1.25em;
+    color: black;
+    padding: .625em 1.25em;
+    height: auto;
+    width: auto;
+    position: relative;
+    z-index: 13;
+    
+    
+  }
+  
+  
+  .navBar_div2 .openMenu_div .menuItemList .menuItem:hover { /*Menu Links on hover*/
+    box-shadow: unset;
+    z-index: 14;
+    font-weight: 300;
+    height: initial;
+    width: initial;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+  
+  }
+    
+  .navBar_div2 .openMenu_div .menuItemList .exit-btn {
+    display: none;
+  }
+
+ /*I can't figure out how to show the menu like DesignCourse does my things are named differently. Not sure how to get the menu to show up. If I could then I would restyle it.*/
+  /*This is my only mobile responsive page, in the video he has larger sizes and puts hide mobile show desktop there*/
+
+  .menuItemList .exit-btn {
+    display: none;
+  }
+  
+  .show-desktop {
+    display: block;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+  
+  
+}
+
+
+
+.navBar_div2 {
+  padding-top: -3;
+  padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+  
+}
+
+
+
+
+.container{
+  padding-top: -3;
+  padding: 1%; /* One value here applies to Top,right,bottom,left (clockwise) add two values for top bottom and the left and right. add more values depending on what you want*/
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  
+}
+
+
+.logoHome {
+  width: 3em;
+  margin: .25em;
+ 
+}
+.backUpTrail {
+  width: 2.6em;
+  margin: 0em;
+}
+
+ 
+
+
+.navBar_div {
+  position: fixed;
+  
+  width: 100%;
+  
+  z-index: 2;
+  
+}
+
+.library_UL {
+  flex: 1;
+  flex-flow: wrap;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 0;
+  margin: 0;
+  
+  
+
+}
+
+.library_UL_Title {
+
+  flex-flow: wrap;
+  background-color: rgb(255, 255, 255); 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+
+}
+
+
+
+.librarylistA {
+  background-color: rgb(255, 255, 255);
+  min-width: 340px;
+  max-width: 300px;
+  margin: .75em;
+  margin-bottom: 0;
+  /*background-color: teal; use this to see how the list items are working*/
+  
+}
+
+
+
+.viewBtn {
+  
+  position: absolute;
+  padding: .5em 1em .5em 1em;
+  margin: -1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: inline;
+  border-radius: 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+}
+
+
+.openMenu_div { /*Open side menu be sure you remove the dot "." from "nav ul" */
+  position: absolute;
+  z-index: 9;
+  width: 80%;
+  text-align: left;
+  top: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+  padding-top: 1.25em;
+  list-style-type: none;
+  
+  
+  
+  
+
+}
+
+.menuItemList{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  z-index: 9;
+  
+  
+  
+}
+
+.menuItem {
+  width: 100%;
+  background-color: white;
+  flex: 1;
+  padding: 2.5em;
+  display: flex;
+  align-items: stretch;
+  text-decoration: none;
+  font-size: 1.25em;
+  color: black;
+  position: relative;
+  z-index: 10;
+  
+  
+}
+
+
+.menuItem:hover { /*Menu Links on hover*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.119);
+  z-index: 11;
+  font-weight: 700;
+  position: relative;
+
+}
+
+
+
+
+header {
+  display: flex;
+  justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
+  background-color: white;
+  
+}
+
+.menuContainer {
+  padding: .5em;
+  flex: 0;
+}
+
+.menu {
+  width: 32px;
+  margin-top: 20%;
+}
+
+.containerLibrary {
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+.library_UL {
+  flex: 100;
+  flex-flow: wrap;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.offsetBox_div {
+  height: 4.125em;
+}
+
+.flexItemSpacer {
+  flex: 1;
+  color: black;
+  
+}
+.server {
+  width: 70%;
+}
+
+.libraryTitle {
+  
+  background-color: white;
+  min-width: 340px;
+  max-width: 300px;
+  margin: .75em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  /*padding-bottom: 2.5em; ---I had moved this to align with other flex items---*/
+  order: -1;
+  /*min-width: 100%; /*This value keeps the "Library Title" stretched across the whole row*/
+
+}
+
+.libraryThumbnail {
+  width: 100%;
+  height: 20em;
+  object-fit: cover; /*These properties scale the image to fit the space*/
+  margin-bottom: -2em;
+  
+  
+  
+}
+
+
+
+/* h1, .subhead {}you can do two at once */
+
+h1 {
+
+  font-size: 4em;
+  font-weight: 300;
+}
+
+h3 {
+
+  font-weight: 500;
+
+}
+
+h6 {
+  
+  color: rgb(192, 192, 192);
+}
+
+.subhead {
+  margin-top: .5em;
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.5em;
+
+}
+
+.btnLoadMore{
+  
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 1.25em;
+  padding: 1.25em;
+  background-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  Width: 200px;
+  text-align: center;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  z-index: 4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.119);
+}
+
+figure {
+  margin-top: 3em;
+}
+
+
+
+.ellipsisContainer {
+  background-color: white;
+}
+
+.item_figcaption {
+  margin-top: .75em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  /*This is how you do the Ellipsis based on the shape of its container*/
+  
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between; /* This puts space in between the .logoHome and .menu using flexbox and the html nesting heiarchy*/
+  background-color: white;
+
+  
+}
+
+.itemTitle {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-width: 89%;
+}
+
+.tag_ul {
+  margin-bottom: 4em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  display: flex;
+  background-color: white;
+  
+  
+  
+
+}
+
+.mdc-chip-set {
+  
+  border-radius: 2em;
+  font-size: 1em;
+  color: black;
+  background-color: rgb(224, 224, 224);
+  padding: .75em;
+  margin-left: .5em;
+  
+  
+}
+
+.profilePic {
+  
+  height: 40px;
+  width: 40px;
+  border-radius:50%;
+ 
+}
+
+.spacer_li{
+  height: 1.75em;
+ /* This gives some padding before the flex elements take over */
+}
+
+
+
+.links_div {
+  flex: 1;
+  padding-bottom: 3em;
+  width: 340px;
+  margin: .75em;
+  background-color: rgb(255, 255, 255);
+}
+
+.paragraph_div {
+  flex: 1;
+  min-width: 16em;
+  max-width: 352px;
+}
+
+.paragraph_div p{
+font-size: 1em;
+line-height: 1.5em;
+}
+
+.logo_footer_div {
+  padding-bottom:1em;
+  
+}
+
+
+
+
+.linkslistA {
+  display: block; /* This is the way to display things left and right of each other, outside of flex as well*/
+  color: rgb(0, 0, 0);
+  padding: 0 0 2em 0;
+  
+}
+
+.links_div .footer-links .linkslistA a {
+  display: inline-block; /* This is the way to display things left and right of each other, outside of flex as well*/
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  
+}
+
+.address {
+  padding-top: 1em;
+  
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  
+  
+  
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
