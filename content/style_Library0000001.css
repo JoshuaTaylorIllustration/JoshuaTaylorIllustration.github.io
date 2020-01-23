@@ -182,7 +182,7 @@ p, blockquote {
   
 }
 
-.library_UL {
+.content {
   flex: 1;
   flex-flow: wrap;
   background-color: rgb(255, 255, 255);
@@ -338,7 +338,7 @@ header {
   width: 70%;
 }
 
-.libraryTitle {
+.contentTitle {
   
   background-color: white;
   min-width: 340px;
