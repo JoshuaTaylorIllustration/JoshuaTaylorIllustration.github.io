@@ -52,12 +52,21 @@
 
     <div class="container">
         <div class="left">
-            <img src="../images/octopusFillGrey.svg" alt="Placeholder Octopus Image" class="Full Image layout">
+            <div class="offsetBox_div"></div>
+            <div class="offsetBox_div"></div>
+            <img src="../images/octopusFillGrey.svg" alt="Placeholder Octopus Image" class="fullSlide">
+            <img src="../images/Octopus.jpg" alt="Placeholder Octopus Image" class="fullSlide">
+            <img src="../images/Octopus.svg" alt="Placeholder Octopus Image" class="fullSlide">
+            
         </div>
         
-        <div class="middle">
-            <div class="offsetBox_div">
-            </div> <!--This gives the library title predictably scalable top margins-->
+        
+        <div class="right">
+            <div class="offsetBox_div"></div>
+            
+            <div class="offsetBox_div"></div>
+            
+            <!--This gives the library title predictably scalable top margins-->
             <div class="content">    
                 <div class="contentTitle">
                     <h1>Scrollable content page layout</h1>
@@ -65,29 +74,52 @@
                     
         
                 </div>
-                <div class="librarylistA"></div>
-                <div class="librarylistA"></div>
-                <div class="librarylistA"></div>
-                <div class="librarylistA"></div>
-                <div class="librarylistA"></div>
+                
+            </div>    
+            
+            <div class="Accordion" href="#">
+                <h5>Responses</h5>
+                <img class="chevron" src="../images/iconsGoogle/chevron-down.svg" alt="">
+                <div class="fake-input">
+                    <input type="text" name="response" id="response" placeholder="        Write a response..."/>
+                    
+                    <img src="../images/Cog2_Square.jpg" alt="Profile Picture" class="profilePic">
+                </div>
+            </div>
+            <div class="panel">
                 
             </div>
-        </div>
-        <div class="right">
-            <div class="dropMenu" >
+            
+            <div class="Accordion" >
                 <h5>Tags</h5>
+                <img class="chevron" src="../images/iconsGoogle/chevron-down.svg" alt="">
                 <div class="tag_ul" >
                     <div><img src="../images/Cog2_Square.jpg" alt="Profile Picture" class="profilePic"></div>
                     <div class="mdc-chip-set">Layouts</div>
                     <div class="mdc-chip-set">Lists</div>
                 </div>
-                <img class="backUpTrail_btn" src="../images/chevron-down.svg" alt="">
             </div>
-            <div class="dropMenu">
 
+
+            <div class="panel">
+                
+            </div>    
+
+            <div class="Accordion">
+                <h5>Rating</h5>
+                <img class="chevron" src="../images/iconsGoogle/chevron-down.svg" alt="">
+                
+                <div class="rate3Stars">
+                    <button><img class="star" src="../images/iconsGoogle/star-outline.svg" alt=""></button>
+                    <button><img class="star" src="../images/iconsGoogle/star-outline.svg" alt=""></button>
+                    <button><img class="star" src="../images/iconsGoogle/star-outline.svg" alt=""></button>
+                </div>
+                
+            </div>
+            <div class="panel">
+                
             </div>
         </div>         
-        
     </div>         
 
 
@@ -116,6 +148,57 @@
             nav.classList.toggle('hide-mobile');
             e.preventDefault();
         });
+        
+
+        /*Accordion from w3 schools*/
+        
+        var acc = document.getElementsByClassName("Accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+
+
+        /*Slideshow from w3 schools*/
+
+        /*
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("fullSlide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        
+        slides[slideIndex-1].style.display = "block";
+        
+        }
+        */
+
+
+
+
 
         
 
