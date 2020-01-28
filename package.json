@@ -19,8 +19,9 @@
   "homepage": "https://github.com/JoshuaTaylorIllustration/JoshuaTaylorIllustration.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "sass": "^1.25.1-test.1"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
