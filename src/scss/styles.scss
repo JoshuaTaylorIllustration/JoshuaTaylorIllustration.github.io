@@ -15,7 +15,27 @@ $bg-color: rgb(255, 255, 255);
     .backUpTrail {
         width: 2.6em;
         margin: 0em;
-      }
+    }
+
+    .nav-item {
+        width: 100%;
+        color: black;
+        background-color: white;
+        flex: 1;
+        font-weight: 500;
+        padding: .5em;
+        display: flex;
+        align-items: stretch;
+        font-size: 1.25em;
+        color: black;
+        position: relative;
+        z-index: 10;
+        
+        
+    }
+
+      
+          
     
 }
 
