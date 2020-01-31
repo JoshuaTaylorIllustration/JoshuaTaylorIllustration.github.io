@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap");
-body {
-  background: #5f5486; }
-  body h1 {
-    color: #00ff0d; }
+.navbar {
+  width: 100%;
+  background: none !important; }
+  @media (max-width: 766px) {
+    .navbar {
+      background: white !important; } }
+  .navbar .backUpTrail {
+    width: 2.6em;
+    margin: 0em; }
