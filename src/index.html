@@ -3,7 +3,10 @@
     <head>
         <title>Bootstrap 12 Layout</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png"> <!--favicon generator https://favicon.io/favicon-converter/-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap">
         <link rel="stylesheet" href="./css/bootstrap.css">
@@ -33,8 +36,86 @@
             </div>
         </nav>
         <div></div>            
-        <div class="hero">
-            <div class="container">        
+        <div class="ContentLayout  bg-secondary pt-5 pb-5 mt-5 mt-lg-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <img src="assets/images/octopusFillGrey.svg" alt="Placeholder Octopus Image" class="fullSlide">
+                    </div>
+                    <div class="row accordian col-sm-12 col-md-6 col-lg-4">
+                        <div class="border-0 col-12">
+                            <div class="p-1 m-2">
+                                <h1 class="">Scrollable content page layout</h1>
+                                <p class="subhead">Content page created while learning HTML & CSS. Including a main image, text, rating, tag search, and commenting area. Created to be responsive.</p>
+                            </div>    
+                        </div>
+                        <div class="card border-0 col-12">
+                            <div class="btn collapsed text-right" id="headingOne" data-toggle="collapse" data-target="#responseExpand">
+                                <h6 class="mb-4 mt-4 text-left">Responses</h6>
+                                <div class="floater">
+                                    <i class="material-icons text-right" id="expand_more">expand_more</i>
+                                </div>
+                                <input type="text" class="form-control mb-4" id="formGroupResponse" placeholder="Write a Response">
+                            </div>
+                                <div class="collapse card-body" id="responseExpand">
+                                    
+            
+                                    <p>Bootstrap makes alot of things easier, however it is built for coders, it may still be easier to hand code something that a designer might give you rather than make bootsrap fit a prototype from designers. What do you think?</p>
+                                </div>    
+                        </div>
+                        <div class="card border-0 col-12">
+                            <div class="btn collapsed text-right" id="headingTwo" data-toggle="collapse" data-target="#tagsExpand">
+                                <h6 class="mb-4 mt-4 text-left">Tags</h6>
+                                <div class="floater">
+                                    <i class="material-icons text-right" id="expand_more">expand_more</i>
+                                </div>
+                                <div class="tag_ul">
+                                    <div><img src="assets/images/Cog2_Square.jpg" alt="Profile Picture" class="profilePic"></div>
+                                    <div class="mdc-chip-set">Layouts</div>
+                                    <div class="mdc-chip-set">Lists</div>
+                                    <div class="mdc-chip-set greyout">00<i class="material-icons moreButton">more_horiz</i></div>
+                                </div>
+                            </div>
+                            <div class="collapse card-body" id="tagsExpand">
+                                <div class="tag_ul mt-0">
+                                    <div class="mdc-chip-set">Layouts</div>
+                                    <div class="mdc-chip-set">Lists</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card border-0 col-12">
+                            <div class="btn collapsed text-right" id="headingTwo" data-toggle="collapse" data-target="#ratingsExpand">
+                                <h6 class="mb-4 mt-4 text-left">Rating</h6>
+                                <div class="floater">
+                                    <i class="material-icons text-right" id="expand_more">expand_more</i>
+                                </div>
+                                <div class="tag_ul">
+                                    <div class="rate3Stars">
+                                        <button><i class="material-icons star" alt="">star_border</button>
+                                        <button><i class="material-icons star" alt="">star_border</button>
+                                        <button><i class="material-icons star" alt="">star_border</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse card-body" id="ratingsExpand">
+                                <div class="tag_ul mt-0">
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <img src="assets/images/Octopus.svg" alt="Placeholder Octopus Image" class="fullSlide">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <img src="assets/images/Octopus.jpg" alt="Placeholder Octopus Image" class="fullSlide">
+                        
+                    </div>
+                    
+                </div>    
                 
             </div>
         </div>

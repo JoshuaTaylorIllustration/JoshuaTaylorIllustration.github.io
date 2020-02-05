@@ -7,6 +7,30 @@ $theme-colors: (
   "danger": #ff4136
 );
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
 
 .navbar {
     width: 100%;
@@ -36,3 +60,52 @@ $theme-colors: (
     
 }
 
+.fullSlide {
+    width: 100%;
+}
+
+.tag_ul {
+    margin-bottom: 4em;
+    margin-top: 1em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.mdc-chip-set {
+    
+    border-radius: 2em;
+    font-size: 1em;
+    color: black;
+    background-color: rgb(224, 224, 224);
+    padding: .4em .75em .125em .75em ;
+    margin-left: .5em;
+}    
+
+.greyout{
+    color: rgb(224, 224, 224);
+}
+
+.profilePic {
+  
+    height: 2.5em;
+    width: 2.5em;
+    border-radius:50%;
+   
+}
+
+.moreButton{
+    font-size: 24px;
+    position: relative;
+    color: rgb(0, 0, 0);
+   
+}
+
+.floater {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+    

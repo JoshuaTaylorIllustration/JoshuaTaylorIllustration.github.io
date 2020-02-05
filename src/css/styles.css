@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap");
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
 .navbar {
   width: 100%;
   background: none !important; }
@@ -14,3 +36,40 @@
     padding: .25em .75em .325em .75em;
     font-size: 1.25em;
     z-index: 10; }
+
+.fullSlide {
+  width: 100%; }
+
+.tag_ul {
+  margin-bottom: 4em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  display: flex; }
+
+.mdc-chip-set {
+  border-radius: 2em;
+  font-size: 1em;
+  color: black;
+  background-color: #e0e0e0;
+  padding: .4em .75em .125em .75em;
+  margin-left: .5em; }
+
+.greyout {
+  color: #e0e0e0; }
+
+.profilePic {
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%; }
+
+.moreButton {
+  font-size: 24px;
+  position: relative;
+  color: black; }
+
+.floater {
+  position: absolute;
+  right: 1em;
+  top: 1em; }
