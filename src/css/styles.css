@@ -41,12 +41,21 @@
   width: 100%; }
 
 .tag_ul {
-  margin-bottom: 4em;
+  margin-bottom: 1em;
   margin-top: 1em;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
   display: flex; }
+
+button {
+  border: 0;
+  color: black;
+  background-color: white; }
+
+button:hover {
+  border: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019); }
 
 .mdc-chip-set {
   border-radius: 2em;
