@@ -85,3 +85,19 @@ button:hover {
   position: absolute;
   right: 1em;
   top: 1em; }
+
+div#colPushDown {
+  height: 40em; }
+
+span#myTitleDIV {
+  order: 4; }
+
+span#mySpacerDIV {
+  order: 3;
+  border-color: blueviolet; }
+
+span#myImagesDIV {
+  order: 1; }
+
+span#myAccordianDIV {
+  order: 2; }
