@@ -128,6 +128,12 @@ div#colPushDown {
     height: 40em;
 }    
 
+.navbar {
+    z-index: 1;
+    background-color: white;
+    position: relative;
+}
+
 span#myTitleDIV {order: 4;}
 span#mySpacerDIV {order:3; border-color: blueviolet;}
 span#myImagesDIV {order: 1;}

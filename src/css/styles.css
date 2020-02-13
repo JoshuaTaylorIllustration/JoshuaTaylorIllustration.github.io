@@ -89,6 +89,11 @@ button:hover {
 div#colPushDown {
   height: 40em; }
 
+.navbar {
+  z-index: 1;
+  background-color: white;
+  position: relative; }
+
 span#myTitleDIV {
   order: 4; }
 
