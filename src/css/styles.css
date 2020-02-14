@@ -137,3 +137,6 @@ span#myAccordianDIV {
     align-items: center;
 }
 */
+@media (min-width: 768px) {
+  .responseText {
+    font-size: 1.25em; } }
