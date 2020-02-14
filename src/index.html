@@ -35,140 +35,141 @@
                 </ul>
             </div>
         </nav>
-        <div class="wrapper">      
-            <div class="col-12 px-md- pt-3 pb-5 mt-3 row ">
+             
+        <div class="col-12 px-md- pt-3 pb-5 mt-3 row ">
+            
+            <div class="col-12 col-md-6 d-md-none">
+                <div class="border-0 col-12">
+                    <div class="p-1 m-2"> <!--This is by trial to align text-->
+                        <h1 class="">Scrollable content page layout</h1>
+                        <p class="subhead">Content page created while learning HTML & CSS. Including a main image, text, rating, tag search, and commenting area. Created to be responsive.</p>
+                    </div>    
+                </div>
+            </div>  
+
+            <div class=" row mx-auto col-12 col-md-6 col-lg-8 col-xl-9" id="myImagesDIV">
+
+                <div class="card mx-auto d-block p-1 col-12 col-md-12 col-xl-4 border-0">
+                    <img src="assets/images/photo/SAM_9211.jpg" alt="Placeholder Octopus Image" class="img-fluid fullSlide">
+                </div>
                 
-                <span class="col-12 col-md-6 d-md-none">
+                <div class="card mx-auto d-block p-1 col-4 col-md-12 col-xl-4 border-0">
+                    <img src="assets/images/photo/SAM_8631.jpg" alt="Placeholder Octopus Image" class="img-fluid fullSlide">
+                </div>
+        
+                <div class="card mx-auto d-block p-1 col-4 col-md-12 col-xl-4 border-0">
+                    <img src="assets/images/photo/SAM_8648.jpg" alt="Placeholder Octopus Image" class="img-fluid fullSlide">
+                </div>
+
+                <div class="card mx-auto d-block p-1 col-4 col-md-12 col-xl-4 border-0">
+                    <img src="assets/images/photo/SAM_8655.jpg" alt="Placeholder Octopus Image" class="img-fluid fullSlide">
+                </div>
+
+                <div class="card mx-auto d-block p-1 col-4 col-md-12 col-xl-4 border-0">
+                    <img src="assets/images/photo/SAM_8673.jpg" alt="Placeholder Octopus Image" class="img-fluid fullSlide">
+                </div>
+
+                <div class="card mx-auto d-block p-1 col-4 col-md-12  col-xl-4 border-0"> 
+                </div>
+
+                <div class="card mx-auto d-block p-1 col-4 col-md-12 col-xl-4 border-0"> 
+                </div>
+
+                <div class="card mx-auto d-none d-md-block p-1 col-4 col-md-12  col-xl-4 border-0" id="colPushDown"> 
+                </div>
+
+            </div>
+                    
+                    
+                
+            
+            <span class="card mx-auto d-block p-1 col-4 border-0" id="mySpacerDIV"> 
+            </span>           
+    
+                
+                
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3" id="myAccordianDIV">
+
+                <div class="col-12 col-md-6 d-md-inline d-none">
                     <div class="border-0 col-12">
                         <div class="p-1 m-2"> <!--This is by trial to align text-->
-                            <h1 class="">Scrollable content page layout</h1>
-                            <p class="subhead">Content page created while learning HTML & CSS. Including a main image, text, rating, tag search, and commenting area. Created to be responsive.</p>
+                            <h1 class="pb-4" >Scrollable content page layout</h1>
+                            <p class="pt-4 subhead">Content page created while learning HTML & CSS. Including a main image, text, rating, tag search, and commenting area. Created to be responsive.</p>
                         </div>    
                     </div>
-                </span>  
+                </div>  
+                <div class="card border-0 col-12 ">
 
-                <span class=" row mx-auto col-12 col-md-6 col-lg-8 col-xl-9" id="myImagesDIV">
+                    <div class="btn collapsed text-right" id="heading" data-toggle="collapse" data-target="#responseExpand">
+                        <h6 class="mb-4 mt-4 text-left">Responses</h6>
+                        <div class="floater">
+                            <i class="material-icons text-right">expand_more</i> 
+                        </div>
+                        <input type="text" class="form-control mb-4" id="formGroupResponse" placeholder="Write a Response">
+                    </div>
 
-                    <div class="card mx-auto d-block p-1 col-12 col-md-12 col-xl-4 border-0">
-                        <img src="assets/images/photo/SAM_9211.jpg" alt="Placeholder Octopus Image" class="img-fluid fullSlide">
+                    <div class="collapse p-1 m-2" id="responseExpand" data-parent="#heading">
+                        
+
+                        <p>Bootstrap makes alot of things easier, however it is built for coders, it may still be easier to hand code something that a designer might give you rather than make bootsrap fit a prototype from designers. What do you think?</p>
                     </div>
-                    
-                    <div class="card mx-auto d-block p-1 col-4 col-md-12 col-xl-4 border-0">
-                        <img src="assets/images/photo/SAM_8631.jpg" alt="Placeholder Octopus Image" class="img-fluid fullSlide">
+                        
+                </div>
+                <div class="card border-0 col-12">
+                    <div class="btn collapsed text-right" id="headingTwo" data-toggle="collapse" data-target="#tagsExpand">
+                        <h6 class="mb-4 mt-4 text-left">Tags</h6>
+                        <div class="floater">
+                            <i class="material-icons text-right">expand_more</i>
+                        </div>
+                        <div class="tag_ul">
+                            <div><img src="assets/images/Cog2_Square.jpg" alt="Profile Picture" class="profilePic"></div>
+                            <div class="mdc-chip-set">Layouts</div>
+                            <div class="mdc-chip-set">Lists</div>
+                            <div class="mdc-chip-set greyout"><i class="material-icons moreButton">more_horiz</i></div>
+                        </div>
                     </div>
+                    <div class="collapse" id="tagsExpand" data-parent="#headingTwo">
+                        <div class="tag_ul p-1 m-2">
+                            <div class="mdc-chip-set">Layouts</div>
+                            <div class="mdc-chip-set">Lists</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="card border-0 col-12">
+                    <div class="btn collapsed text-right" id="headingThree" data-toggle="collapse" data-target="#ratingsExpand">
+                        <h6 class="mb-4 mt-4 text-left">Rate this page</h6>
+                        <div class="floater">
+                            <i class="material-icons text-right">expand_more</i>
+                        </div>
+                        <div class="tag_ul">
+                            <div class="rate3Stars">
+                                <button><i class="material-icons star">star_border</i></button>
+                                <button><i class="material-icons star">star_border</i></button>
+                                <button><i class="material-icons star">star_border</i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" data-parent="#headingThree" id="ratingsExpand">
+                        <div class="row tag_ul p-1 m-2">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             
-                    <div class="card mx-auto d-block p-1 col-4 col-md-12 col-xl-4 border-0">
-                        <img src="assets/images/photo/SAM_8648.jpg" alt="Placeholder Octopus Image" class="img-fluid fullSlide">
-                    </div>
 
-                    <div class="card mx-auto d-block p-1 col-4 col-md-12 col-xl-4 border-0">
-                        <img src="assets/images/photo/SAM_8655.jpg" alt="Placeholder Octopus Image" class="img-fluid fullSlide">
-                    </div>
-
-                    <div class="card mx-auto d-block p-1 col-4 col-md-12 col-xl-4 border-0">
-                        <img src="assets/images/photo/SAM_8673.jpg" alt="Placeholder Octopus Image" class="img-fluid fullSlide">
-                    </div>
-
-                    <div class="card mx-auto d-block p-1 col-4 col-md-12  col-xl-4 border-0"> 
-                    </div>
-
-                    <div class="card mx-auto d-block p-1 col-4 col-md-12 col-xl-4 border-0"> 
-                    </div>
-
-                    <div class="card mx-auto d-none d-md-block p-1 col-4 col-md-12  col-xl-4 border-0" id="colPushDown"> 
-                    </div>
-
-                </span>
-                        
-                        
+                    
+                    
                     
                 
-                <span class="card mx-auto d-block p-1 col-4 border-0" id="mySpacerDIV"> 
-                </span>           
+                
+        </div>
         
-                    
-                    
-                <span class="col-12 col-md-6 col-lg-4 col-xl-3" id="myAccordianDIV">
 
-                    <span class="col-12 col-md-6 d-md-inline d-none">
-                        <div class="border-0 col-12">
-                            <div class="p-1 m-2"> <!--This is by trial to align text-->
-                                <h1 class="pb-4" >Scrollable content page layout</h1>
-                                <p class="pt-4 subhead">Content page created while learning HTML & CSS. Including a main image, text, rating, tag search, and commenting area. Created to be responsive.</p>
-                            </div>    
-                        </div>
-                    </span>  
-                    <div class="card border-0 col-12 ">
-
-                        <div class="btn collapsed text-right" id="heading" data-toggle="collapse" data-target="#responseExpand">
-                            <h6 class="mb-4 mt-4 text-left">Responses</h6>
-                            <div class="floater">
-                                <i class="material-icons text-right">expand_more</i> 
-                            </div>
-                            <input type="text" class="form-control mb-4" id="formGroupResponse" placeholder="Write a Response">
-                        </div>
-
-                        <div class="collapse p-1 m-2" id="responseExpand" data-parent="#heading">
-                            
-
-                            <p>Bootstrap makes alot of things easier, however it is built for coders, it may still be easier to hand code something that a designer might give you rather than make bootsrap fit a prototype from designers. What do you think?</p>
-                        </div>
-                            
-                    </div>
-                    <div class="card border-0 col-12">
-                        <div class="btn collapsed text-right" id="headingTwo" data-toggle="collapse" data-target="#tagsExpand">
-                            <h6 class="mb-4 mt-4 text-left">Tags</h6>
-                            <div class="floater">
-                                <i class="material-icons text-right">expand_more</i>
-                            </div>
-                            <div class="tag_ul">
-                                <div><img src="assets/images/Cog2_Square.jpg" alt="Profile Picture" class="profilePic"></div>
-                                <div class="mdc-chip-set">Layouts</div>
-                                <div class="mdc-chip-set">Lists</div>
-                                <div class="mdc-chip-set greyout"><i class="material-icons moreButton">more_horiz</i></div>
-                            </div>
-                        </div>
-                        <div class="collapse" id="tagsExpand" data-parent="#headingTwo">
-                            <div class="tag_ul p-1 m-2">
-                                <div class="mdc-chip-set">Layouts</div>
-                                <div class="mdc-chip-set">Lists</div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="card border-0 col-12">
-                        <div class="btn collapsed text-right" id="headingThree" data-toggle="collapse" data-target="#ratingsExpand">
-                            <h6 class="mb-4 mt-4 text-left">Rate this page</h6>
-                            <div class="floater">
-                                <i class="material-icons text-right">expand_more</i>
-                            </div>
-                            <div class="tag_ul">
-                                <div class="rate3Stars">
-                                    <button><i class="material-icons star">star_border</i></button>
-                                    <button><i class="material-icons star">star_border</i></button>
-                                    <button><i class="material-icons star">star_border</i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapse" data-parent="#headingThree" id="ratingsExpand">
-                            <div class="row tag_ul p-1 m-2">
-                                <span class="material-icons">star</span>
-                                <span class="material-icons">star_border</span>
-                                <span class="material-icons">star_border</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </span>
-                
-
-                        
-                        
-                        
-                    
-                    
-            </div></div>
-        </div> 
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
