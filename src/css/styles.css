@@ -106,3 +106,34 @@ span#myImagesDIV {
 
 span#myAccordianDIV {
   order: 2; }
+
+.coverPict {
+  overflow: hidden; }
+
+.coverPicture {
+  object-fit: cover;
+  height: 542px;
+  width: 100%; }
+
+.coverPictureTop {
+  object-fit: cover;
+  height: 260px;
+  width: 100%; }
+
+.iconSmall {
+  font-size: 2em; }
+
+.rotate180 {
+  transform: rotate(180deg);
+  transform-origin: center center; }
+
+.rotate360 {
+  transform: rotate(360deg);
+  transform-origin: center center; }
+
+/*
+.relativeContainer {
+    position: relative;
+    align-items: center;
+}
+*/
