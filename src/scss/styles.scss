@@ -2,6 +2,7 @@
 
 $font-family-base: (Roboto);
 $bg-color: rgb(255, 255, 255);
+$primary: #000000;
 $theme-colors: (
   "primary": #000000,
   "danger": #ff4136
@@ -30,7 +31,7 @@ $theme-colors: (
   
     /* Support for IE. */
     font-feature-settings: 'liga';
-  }
+}
 
 .navbar {
     width: 100%;
@@ -150,14 +151,21 @@ span#myAccordianDIV {order: 2;}
 
 .coverPicture {
     object-fit: cover;
-    height:542px;
+    height:545px;
     width: 100%;
+    
     
 }
 
-.coverPictureTop {
+.coverPicture252 {
     object-fit: cover;
-    height:260px;
+    width: 252px;
+    height:100%;
+    
+}
+
+.cover {
+    object-fit: cover;
     width: 100%;
     
 }
@@ -183,6 +191,8 @@ span#myAccordianDIV {order: 2;}
     align-items: center;
 }
 */
+
+
 
 .responseText {
    

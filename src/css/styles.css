@@ -112,12 +112,16 @@ span#myAccordianDIV {
 
 .coverPicture {
   object-fit: cover;
-  height: 542px;
+  height: 545px;
   width: 100%; }
 
-.coverPictureTop {
+.coverPicture252 {
   object-fit: cover;
-  height: 260px;
+  width: 252px;
+  height: 100%; }
+
+.cover {
+  object-fit: cover;
   width: 100%; }
 
 .iconSmall {
