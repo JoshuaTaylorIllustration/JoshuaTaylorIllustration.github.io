@@ -144,10 +144,13 @@ span#myAccordianDIV {order: 2;}
 
 
 .coverPict {
+    object-fit: cover;
     overflow: hidden;
-    
+    height: 300px;
+    width: auto;
     
 }
+
 
 .coverPicture {
     object-fit: cover;
@@ -155,13 +158,18 @@ span#myAccordianDIV {order: 2;}
     width: 100%;
     
     
+    
 }
 
-.coverPicture252 {
+.coverPictureTop {
     object-fit: cover;
-    width: 252px;
-    height:100%;
+    height: 252px;
+    width:100%;
     
+}
+
+.width248{
+    max-width: 248px;
 }
 
 .cover {
