@@ -133,6 +133,9 @@ span#myAccordianDIV {
 .iconSmall {
   font-size: 2em; }
 
+.iconSmaller {
+  font-size: 1.5em; }
+
 .rotate180 {
   transform: rotate(180deg);
   transform-origin: center center; }
@@ -147,6 +150,15 @@ span#myAccordianDIV {
     align-items: center;
 }
 */
+.containgrey {
+  background-color: #EFEFEF; }
+
+.whitebox {
+  border-color: #DDDDDD;
+  border-style: solid;
+  border-width: .25px;
+  background-color: white; }
+
 @media (min-width: 768px) {
   .responseText {
     font-size: 1.25em; } }

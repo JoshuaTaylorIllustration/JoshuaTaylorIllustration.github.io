@@ -182,6 +182,10 @@ span#myAccordianDIV {order: 2;}
     font-size: 2em;
 }
 
+.iconSmaller {
+    font-size: 1.5em;
+}
+
 .rotate180 {
     transform: rotate(180deg);
     transform-origin: (center center);
@@ -200,8 +204,18 @@ span#myAccordianDIV {order: 2;}
 }
 */
 
+.containgrey {
+    background-color: #EFEFEF;
+}
 
-
+.whitebox {
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: .25px;
+    background-color: white;
+    
+    
+}
 .responseText {
    
    
