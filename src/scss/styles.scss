@@ -212,6 +212,11 @@ span#myAccordianDIV {order: 2;}
     color: #CFCFCF;
 }
 
+.fontColorRed {
+    color: #FF003C;
+}
+
+
 .whitebox {
     border-color: #DDDDDD;
     border-style: solid;
@@ -249,3 +254,17 @@ input[type=text]:focus {
     
     
 }
+
+.contextButton {
+    display:none
+}
+
+
+.cardContext:hover {
+   
+    .contextButton {
+        display: inline;
+    }
+    
+}
+

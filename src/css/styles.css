@@ -156,6 +156,9 @@ span#myAccordianDIV {
 .fontColorGrey {
   color: #CFCFCF; }
 
+.fontColorRed {
+  color: #FF003C; }
+
 .whitebox {
   border-color: #DDDDDD;
   border-style: solid;
@@ -182,3 +185,9 @@ input[type=text]:focus {
 @media (min-width: 768px) {
   .responseText {
     font-size: 1.25em; } }
+
+.contextButton {
+  display: none; }
+
+.cardContext:hover .contextButton {
+  display: inline; }
