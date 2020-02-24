@@ -192,3 +192,11 @@ input[type=text]:focus {
 
 .cardContext:hover .contextButton {
   display: inline; }
+
+.item_figcaption {
+  margin-top: .75em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  /*This is how you do the Ellipsis based on the shape of its container*/ }
