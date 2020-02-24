@@ -186,8 +186,9 @@ input[type=text]:focus {
   .responseText {
     font-size: 1.25em; } }
 
-.contextButton {
-  display: none; }
+@media (min-width: 768px) {
+  .contextButton {
+    display: none; } }
 
 .cardContext:hover .contextButton {
   display: inline; }
