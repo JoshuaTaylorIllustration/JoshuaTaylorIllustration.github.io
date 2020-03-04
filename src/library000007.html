@@ -16,31 +16,43 @@
 
 
     <body>
-        
+       
        <!--Bootstrap uses justify-content-end on Nav for navbar and on ul for basic nav to right justify content, but If you want the icon to be on the right..-->
-        <nav class="navbar navbar-expand-sm bg-light navbar-light shadow">
-            <a class="navbar-brand"  style="height: 48px" href="../index.html">
-                <i class="material-icons iconSmall">arrow_back</i>
-            </a>
-            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <i class="material-icons iconSmall bg-light text-dark ">menu</i>
-            </button>
-            <!--Bootstrap uses justify-content-end here along with navbar-collapse makes it work-->
-            <div class="collapse justify-content-end navbar-collapse" id="collapsibleNavbar">
-               
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="../index.html">Library</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Design</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Blog</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+       <div class="fixed-top bg-light">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light shadow">
+                <a class="navbar-brand"  style="height: 48px" href="../index.html">
+                    <i class="material-icons iconSmall">arrow_back</i>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="material-icons iconSmall bg-light text-dark ">menu</i>
+                </button>
+                <!--Bootstrap uses justify-content-end here along with navbar-collapse makes it work-->
+                <div class="collapse justify-content-end navbar-collapse" id="collapsibleNavbar">
+                
+                    <ul class="navbar-nav text-right ">
+                      
+                        <li class="nav-item">
+                            <a class="nav-link bg-light text-dark btn-outline-dark p-sm-2 p-4" href="../index.html">Library</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bg-light text-dark btn-outline-dark p-sm-2 p-4" href="#">Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bg-light text-dark btn-outline-dark p-sm-2 p-4" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div>
+            
+            
+        </div>
+        
+
+        <img class="card-img" src="assets/images/Photo/SAM_9190.jpg" alt="sample alley">
+        <img class="card-img" src="assets/images/Photo/SAM_8655.jpg" alt="sample alley">
+        <img class="card-img"  src="assets/images/Photo/SAM_9153.jpg" alt="sample alley">
 
         
 
