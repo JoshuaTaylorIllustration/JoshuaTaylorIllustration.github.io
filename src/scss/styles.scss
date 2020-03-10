@@ -178,6 +178,18 @@ span#myAccordianDIV {order: 2;}
     
 }
 
+
+
+.coverVerticalSixty {
+    object-fit: cover;
+    height: 60vh;
+    object-position: 0 45%;
+    
+    
+}
+
+
+
 .iconSmall {
     font-size: 2.1em;
 }
@@ -280,3 +292,4 @@ input[type=text]:focus {
     -webkit-line-clamp: 3;
     /*This is how you do the Ellipsis based on the shape of its container*/
 }
+
