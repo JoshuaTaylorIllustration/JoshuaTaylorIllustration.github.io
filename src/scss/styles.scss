@@ -168,6 +168,13 @@ span#myAccordianDIV {order: 2;}
     
 }
 
+.coverPictureSection {
+    object-fit: cover;
+    height: 400px;
+    width:100%;
+    
+}
+
 .width248{
     max-width: 248px;
 }
@@ -178,7 +185,9 @@ span#myAccordianDIV {order: 2;}
     
 }
 
-
+.positionPicture67 {
+    object-position: 0 67%;
+}
 
 
 .coverVerticalSixty {
@@ -187,6 +196,10 @@ span#myAccordianDIV {order: 2;}
     object-position: 0 45%;
     
     
+}
+
+.lineSpaceIt {
+    line-height: 1.4em;
 }
 
 
