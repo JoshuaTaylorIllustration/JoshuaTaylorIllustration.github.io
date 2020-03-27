@@ -216,3 +216,37 @@ input[type=text]:focus {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   /*This is how you do the Ellipsis based on the shape of its container*/ }
+
+.coverHeight {
+  width: 50%;
+  height: 400px; }
+  @media (min-height: 600px) {
+    .coverHeight {
+      height: 60vh;
+      width: 50%; } }
+  @media (max-width: 576px) {
+    .coverHeight {
+      width: 100%;
+      height: 300px; } }
+
+.subCoverHeight {
+  height: 200px; }
+  @media (min-height: 600px) {
+    .subCoverHeight {
+      height: 29.9vh; } }
+  @media (max-width: 576px) {
+    .subCoverHeight {
+      height: 15vh; } }
+
+@media (max-width: 992px) {
+  .subCoverHide {
+    display: none; } }
+
+.subCoverShown {
+  width: 25%; }
+  @media (max-width: 992px) {
+    .subCoverShown {
+      width: 50%; } }
+  @media (max-width: 576px) {
+    .subCoverShown {
+      width: 50%; } }
