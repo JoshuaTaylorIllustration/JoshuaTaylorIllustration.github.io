@@ -233,7 +233,7 @@ input[type=text]:focus {
   height: 200px; }
   @media (min-height: 600px) {
     .subCoverHeight {
-      height: 29.9vh; } }
+      height: 29.78vh; } }
   @media (max-width: 576px) {
     .subCoverHeight {
       height: 15vh; } }
