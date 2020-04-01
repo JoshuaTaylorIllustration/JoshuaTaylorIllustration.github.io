@@ -375,3 +375,40 @@ input[type=text]:focus {
     
 }
 
+.mobileVerticalSpacer{
+    @media(min-width: 576px) {
+        display: none;
+        
+
+    }
+}
+
+.mobileVerticalRemove{
+    @media(max-width: 576px) {
+        display: none;
+        
+
+    }
+}
+
+.zindex10{
+    z-index: 10;
+
+}
+.placement{
+    
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
+   
+    
+}
+
+.concentricCircle {
+    border: 1px #FFC107;
+    border-style: dashed;
+    
+    
+    
+}

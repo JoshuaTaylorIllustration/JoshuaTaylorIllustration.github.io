@@ -250,3 +250,23 @@ input[type=text]:focus {
   @media (max-width: 576px) {
     .subCoverShown {
       width: 50%; } }
+
+@media (min-width: 576px) {
+  .mobileVerticalSpacer {
+    display: none; } }
+
+@media (max-width: 576px) {
+  .mobileVerticalRemove {
+    display: none; } }
+
+.zindex10 {
+  z-index: 10; }
+
+.placement {
+  top: 0;
+  left: 0;
+  z-index: 0; }
+
+.concentricCircle {
+  border: 1px #FFC107;
+  border-style: dashed; }
