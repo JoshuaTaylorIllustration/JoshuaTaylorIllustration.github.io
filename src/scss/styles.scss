@@ -85,11 +85,80 @@ button {
     background-color: white;
 }
 
+/*
 button:hover {
     border:0;
+     
     
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+    
+
+
+    
+
+
 }
+causing issues removed but may need it back? */
+
+
+h6 {
+    pointer-events: inherit;
+} 
+
+
+.padChange:hover {
+    padding-bottom: 0;
+    padding-top: 5px;
+    border-top-style: 2px solid rgb(255, 255, 255);
+    box-shadow: none;
+    
+    button {
+        border: none white;
+        
+        
+    }
+    
+    button:hover {
+        border: none white;
+        
+        
+    
+    
+        
+    
+    
+    }
+
+
+
+   
+}
+
+
+.padChange {
+    padding-bottom: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+    padding-top: 0px;
+
+    
+    
+
+    
+
+}
+
+
+.pressMe {
+
+    margin-top: -4px;
+    flex: 1 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+    width: static;
+    
+    
+    
+
+}
+
 .mdc-chip-set {
     
     border-radius: 2em;
@@ -411,4 +480,74 @@ input[type=text]:focus {
     
     
     
+}
+
+.colorGreyBright {
+    background-color: rgb(255, 255, 255) ;
+    border-radius: .25em;
+    
+    
+    
+
+}
+
+.colorGreyStroke {
+    background-color: #EAEAEA ;
+    border: 1px solid #bbbbbb;
+    border-radius: .25em;
+    
+    
+}
+
+.colorGreyCalc {
+    background-color: #EFEEEC ;
+}
+
+
+.colorLightTan {
+    background-color: #F5F4F2 ;
+    border-radius: .25em;
+    
+    
+    
+
+}
+
+.colorBrightPink{
+    background-color: #FE2878 ;
+    border-radius: .25em;
+
+}
+
+
+.colorBrightPinkStroke {
+    background-color: #FE2878 ;
+    border: 1px solid rgb(190, 33, 90);
+    border-radius: .25em;
+    
+    
+}
+
+.colorGreenScreen {
+    background-image: linear-gradient(to right, #928E73, #999884, #9D9D85, #9D9D85);
+    border: rgb(255, 7, 7);
+    border-radius: .25em;
+    
+    
+}
+
+.colorGreenEdge {
+    background-color: #D6C6B6;
+    border: 1px solid #bbbbbb;
+    border-radius: .25em;
+    
+    
+}
+
+.colorTextDarkRed {
+    color: #4A0012;
+}
+
+.colorTextDarkGreen {
+    color: #3A554F;
 }
