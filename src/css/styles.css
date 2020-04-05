@@ -313,6 +313,11 @@ input[type=text]:focus {
   border: 1px solid #bbbbbb;
   border-radius: .25em; }
 
+.colorlightStroke {
+  background-color: #EAEAEA;
+  border: 2px solid #ffffff;
+  border-radius: .5em; }
+
 .colorGreyCalc {
   background-color: #EFEEEC; }
 
@@ -339,8 +344,26 @@ input[type=text]:focus {
   border: 1px solid #bbbbbb;
   border-radius: .25em; }
 
+.colorCalcEdge {
+  background-color: #EAEAEA;
+  border: 3px solid #bbbbbb;
+  border-radius: .4em; }
+
 .colorTextDarkRed {
   color: #4A0012; }
 
 .colorTextDarkGreen {
   color: #3A554F; }
+
+.colorDarkRedEdge {
+  background-color: #866147;
+  border: 1px inset #926D53;
+  border-radius: .16em; }
+
+.sliceShineClipPath {
+  clip-path: polygon(94% 0, 22% 100%, 0 100%, 73% 0);
+  background-color: #EAEAEA;
+  border: 3px solid #bbbbbb;
+  border-radius: .4em;
+  opacity: 0.09;
+  z-index: 10; }
