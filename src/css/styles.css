@@ -361,6 +361,7 @@ input[type=text]:focus {
   border-radius: .16em; }
 
 .sliceShineClipPath {
+  -webkit-clip-path: polygon(94% 0%, 22% 100%, 0 100%, 73% 0);
   clip-path: polygon(94% 0, 22% 100%, 0 100%, 73% 0);
   background-color: #EAEAEA;
   border: 3px solid #bbbbbb;
