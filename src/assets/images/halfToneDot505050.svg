@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124" height="124" viewBox="0 0 124 124">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="124" height="124" fill="none"/>
+    </clipPath>
+  </defs>
+  <title>halfToneDot</title>
+  <g clip-path="url(#clip-path)">
+    <circle r="32" fill="#505050"/>
+    <circle cx="124" r="32" fill="#505050"/>
+    <circle cx="62" cy="62" r="32" fill="#505050"/>
+    <circle cy="124" r="32" fill="#505050"/>
+    <circle cx="124" cy="124" r="32" fill="#505050"/>
+  </g>
+</svg>
