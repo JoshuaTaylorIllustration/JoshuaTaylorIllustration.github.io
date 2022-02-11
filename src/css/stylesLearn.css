@@ -46,56 +46,16 @@ a:active MUST come after a:hover
 
 ul {
   list-style-type: none;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09), 0 6px 20px 0 rgba(0, 0, 0, 0.009); }
+  margin: 0;
+  padding: 0; }
 
 li {
   display: inline-block; }
-  @media (max-width: 576px) {
-    li {
-      display: block; } }
 
 li a {
   display: block;
   color: #303030;
-  padding: .25em 1em .25em 1em;
-  margin: .25em 0em .25em 1em;
   text-decoration: none; }
-
-.tableSpacer {
-  /*not sure why this works*/ }
-  .tableSpacer .tableSpace {
-    height: 100%; }
-
-th, td {
-  border-right: 1px solid #EEEEEE; }
-
-table {
-  border: 2px solid #EEEEEE;
-  width: 100%; }
-
-tr:nth-child(even) {
-  background-color: #EEEEEE; }
-
-tr {
-  background-color: white; }
-
-tr:hover {
-  background-color: #e2e2e2; }
-  tr:hover .tableSpace {
-    height: 100%;
-    background-color: white; }
-
-th {
-  height: 64px;
-  font-weight: 600;
-  padding: .5em;
-  border-bottom: 1px solid #EEEEEE; }
-
-td {
-  height: 48px;
-  font-weight: 400;
-  vertical-align: middle;
-  padding: .5em; }
 
 ul.a {
   list-style-type: disc;
@@ -104,22 +64,49 @@ ul.a {
     background-size: 1em;
     */ }
 
+.padFixLeftIcon {
+  padding: .5em 1.75em .25em 1.5em; }
+
+.padFixRightIcon {
+  padding: .5em 1.5em .25em 1.75em; }
+
+.padFixIcon {
+  padding: .6em .5em .25em .5em; }
+
+.padFixIconText {
+  padding: .3em .5em .25em .5em; }
+
+.rotate180 {
+  transform: rotate(180deg); }
+
 a {
-  margin: .25em 0em .25em -1em;
-  padding: .25em 0em .25em 1em; }
+  background-color: #ffffff;
+  border-radius: .1875em;
+  text-decoration: none; }
 
 a:link {
   color: grey; }
 
 a:visited {
-  border: 1px solid #303030;
-  margin: .25em 0em .25em -.875em;
-  padding: .25em 0em .25em .875em; }
+  background-color: #ffffff;
+  border-radius: .1875em;
+  text-decoration: none; }
+
+.expand {
+  height: 5em; }
+
+.expand:hover {
+  height: inherit; }
+
+.stayTop {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  bottom: 0; }
 
 a:hover {
   color: hotpink;
   background-color: #303030;
-  padding: .25em 1em .25em 1em;
   border-radius: .1875em;
   text-decoration: none; }
   a:hover h6 {
@@ -128,8 +115,8 @@ a:hover {
 a:active {
   color: rebeccapurple;
   border: 1px solid #303030;
-  padding: .25em 1em .25em 1em;
-  background-color: white; }
+  background-color: white;
+  border-radius: .1875em; }
   a:active h6 {
     color: #303030; }
 
@@ -150,11 +137,23 @@ p {
     text-shadow: 2px 2px 5px rgb(172, 172, 172);
     font-style: normal;
     */ }
+  @media (max-width: 768px) {
+    p {
+      text-align: left;
+      color: #303030;
+      font-size: .8em;
+      line-height: 1.75em;
+      font-weight: 700; } }
+
+.stayBottom {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
 
 .narratorBlock {
   background-color: white;
   border-radius: .1em;
-  padding: 1em 3em .625em 2em; }
+  padding: .5em 2em 0em 1em; }
 
 .hoverOpacity100 {
   opacity: .25;
@@ -188,3 +187,6 @@ h6 {
   object-fit: cover;
   height: 100vh;
   width: 100%; }
+
+.floatRight {
+  float: right; }
